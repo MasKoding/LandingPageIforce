@@ -60,6 +60,7 @@
 }
 
 
+
 .item {
   font-size: 24px;
   position: relative;
@@ -71,7 +72,77 @@
   border-image-slice: 10;
   margin-top: 100%;
   position: relative;
+  animation-name: scroll;
+  animation-duration: 8s;
+  animation-delay: 2s;
+  animation-iteration-count: infinite;
+  animation-direction: alternate;
 }
+
+
+@keyframes scroll {
+  0% {
+    transform: translate3d(0, 0, 0);
+  }
+
+  25% {
+    transform: translate3d(0, -25%, 0);
+  }
+
+  50% {
+    transform: translate3d(0, -50%, 0);
+  }
+
+  75% {
+    transform: translate3d(0, -75%, 0);
+  }
+
+ 
+}
+
+#first-text {
+  animation: moveUp 1s 1s forwards;
+  -webkit-animation: moveUp 1s 1s forwards;
+}
+#second-text {
+  opacity: 0;
+  transform: translateY(-30px);
+  -webkit-transform: translateY(-30px);
+  animation: scrollup 1s 1.2s forwards;
+  -webkit-animation: scrollup 1s 1.2s forwards;
+}
+@keyframes moveUp {
+  0% {
+    transform: translateY(0);
+    opacity: 1;
+  }
+  100% {
+    transform: translateY(-100px);
+    opacity: 0;
+  }
+}
+@-webkit-keyframes moveUp {
+  0% {
+    transform: translateY(0);
+    opacity: 1;
+  }
+  100% {
+    transform: translateY(-100px);
+    opacity: 0;
+  }
+}
+
+@keyframes scrollup {
+  100% {
+    transform: translateY(-54px);
+  }
+}
+@-webkit-keyframes scrollup {
+  100% {
+    transform: translateY(-54px);
+  }
+}
+
 
 .hero .hero-text {
   font-family: "Inter", sans-serif;
