@@ -5,6 +5,7 @@
 
 #hero .container {
   color: white;
+  width: 100%;
 }
 .hero {
   display: grid;
@@ -53,24 +54,20 @@
   font-weight: 400;
 }
 
-.hero .hero-text h4 span {
+
+.item {
   font-size: 24px;
-  border-radius: 10px;
-  border: 2px;
-  border-style: solid;
-  border: 1.5px solid;
-
-  border-image-source: linear-gradient(
-    85.63deg,
-    rgba(246, 79, 89, 0.28) -13.27%,
-    #c471ed 23.89%,
-    #12c2e9 100.46%
-  );
-
-  padding: 5px 20px;
+  position: relative;
+  top: 0;
+  border:7px solid transparent;
+  border-image-source: url("source/Image/rounded.png");
+  padding: 5px 15px;
   border-radius: 10px;
   border-image-slice: 10;
+  margin-top: 100%;
+  position: relative;
 }
+
 .hero .hero-text {
   font-family: "Inter", sans-serif;
   text-align: center;
