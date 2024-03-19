@@ -6,6 +6,8 @@
 
 body{
   overflow-x: hidden;
+  width: 100%;
+
 }
 #contentVideo{
   position: absolute;
@@ -188,6 +190,15 @@ body{
   font-family: "Inter", sans-serif;
   font-size: 14px;
   font-weight: 400;
+}
+
+.status-slider{
+  padding-left: 150px;
+}
+
+.btn-slider{
+  padding-left: 150px;
+  padding-top: 50px;
 }
 
 @media (min-width: 1366px) {
