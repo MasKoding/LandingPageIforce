@@ -3,16 +3,22 @@
 @import url("https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:ital,wght@0,200..800;1,200..800&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap");
 
+
+body{
+  overflow-x: hidden;
+}
 #contentVideo{
   position: absolute;
   overflow: hidden;
   object-fit: cover;
   width: 100%;
   height: 100vh;
+  overflow-x: hidden;
 }
 #hero .container {
   color: white;
   width: 100%;
+  overflow-x: hidden;
 }
 .hero {
   display: grid;

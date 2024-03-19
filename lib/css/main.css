@@ -289,6 +289,7 @@ technologies
   font-family: "Inter", sans-serif;
 }
 
+
 .simple-list-example-scrollspy .active {
   background-color: none;
   color: black;
@@ -330,10 +331,12 @@ technologies
 }
 
 #simple-list-example {
-  pointer-events: none;
   opacity: 1;
 }
 
+#simple-list-example > a:hover{
+  cursor: pointer;
+}
 /* ----------
 best project
  ---------- */
