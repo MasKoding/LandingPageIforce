@@ -392,6 +392,7 @@ client
   display: flex;
   justify-content: center;
   align-items: center;
+ 
 }
 .ourclient .client-pict {
   margin: 0 auto;
@@ -403,6 +404,7 @@ client
 /* ----------
 career
  ---------- */
+
 .career p {
   font-size: 14px;
   padding-bottom: 32px;
@@ -469,9 +471,11 @@ jobvacancy
 }
 .jobvacancy .career-card-link .career-card {
   color: black;
-  background: rgba(236, 236, 236, 0.9);
+  background: #fff!important;
+  border: 1px solid #E8E8E8;
   padding: 16px 16px 16px 16px;
   border-radius: 20px;
+  width: 100%;
 }
 
 .jobvacancy .career-card {
