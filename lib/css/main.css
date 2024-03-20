@@ -176,7 +176,7 @@ what we do
 #whatwedo .whatwedo-text {
   padding-left: 150px;
   padding-right: 50px;
-  padding-top: 150px;
+  padding-top: 80px;
 }
 #whatwedo .whatwedo-text h3 {
   padding-bottom: 40px;
@@ -226,6 +226,7 @@ what we do
   width: 100%;
   height: 80vh;
   background-size: cover;
+  overflow: hidden;
 }
 #pills-profile {
   background-image: url("../source/Image/Image_dua.png");
@@ -494,11 +495,7 @@ jobvacancy
 /* ----------
 contact us
  ---------- */
-.contactus {
-  background-image: url("../source/Image/contact-us-1.png");
-  color: rgb(255, 255, 255);
-  padding-bottom: 83px;
-}
+
 .contactus .jobtype {
   display: flex;
 }

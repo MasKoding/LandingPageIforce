@@ -200,7 +200,36 @@ body{
   padding-left: 150px;
   padding-top: 50px;
 }
+.contact-element{
+  background-image: url('../lib/source/Image/contact_us.png');
+  background-size: contain;
+  background-repeat: no-repeat;
+  padding: 85px;
+  padding:40px 126px;
+  height: 60vh;
+  overflow:hidden
+}
 
+.contact-text-left{
+  font-family: Inter;
+font-size: 44px;
+font-style: normal;
+font-weight: 700;
+line-height: 62px; /* 140.909% */
+letter-spacing: 0.88px;
+}
+
+.btnContactUs{
+  
+  border-radius: 112px;
+  padding: 25px 25px;
+}
+.contact-text-btn{
+  background: -webkit-linear-gradient(#18D4F1,#2577DD );
+  -webkit-background-clip: text;
+ font-weight: bold;
+  -webkit-text-fill-color: transparent;
+}
 @media (min-width: 1366px) {
   #hero {
     background-attachment: fixed;
