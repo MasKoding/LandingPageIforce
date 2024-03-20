@@ -4,12 +4,13 @@
 @import url("https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap");
 
 
-body{
+body {
   overflow-x: hidden;
   width: 100%;
 
 }
-#contentVideo{
+
+#contentVideo {
   position: absolute;
   overflow: hidden;
   object-fit: cover;
@@ -17,11 +18,13 @@ body{
   height: 100vh;
   overflow-x: hidden;
 }
+
 #hero .container {
   color: white;
   width: 100%;
   overflow-x: hidden;
 }
+
 .hero {
   display: grid;
   place-items: center;
@@ -43,6 +46,7 @@ body{
   right: 0;
   z-index: 1;
 }
+
 #hero h1 {
   margin: 0;
   font-size: 56px;
@@ -53,6 +57,7 @@ body{
   position: relative;
   z-index: 2;
 }
+
 #hero h4 {
   margin: 10px;
   font-size: 20px;
@@ -73,7 +78,7 @@ body{
   font-size: 24px;
   position: relative;
   top: 0;
-  border:7px solid transparent;
+  border: 7px solid transparent;
   border-image-source: url("source/Image/rounded.png");
   padding: 5px 15px;
   border-radius: 10px;
@@ -105,13 +110,14 @@ body{
     transform: translate3d(0, -75%, 0);
   }
 
- 
+
 }
 
 #first-text {
   animation: moveUp 1s 1s forwards;
   -webkit-animation: moveUp 1s 1s forwards;
 }
+
 #second-text {
   opacity: 0;
   transform: translateY(-30px);
@@ -119,21 +125,25 @@ body{
   animation: scrollup 1s 1.2s forwards;
   -webkit-animation: scrollup 1s 1.2s forwards;
 }
+
 @keyframes moveUp {
   0% {
     transform: translateY(0);
     opacity: 1;
   }
+
   100% {
     transform: translateY(-100px);
     opacity: 0;
   }
 }
+
 @-webkit-keyframes moveUp {
   0% {
     transform: translateY(0);
     opacity: 1;
   }
+
   100% {
     transform: translateY(-100px);
     opacity: 0;
@@ -145,6 +155,7 @@ body{
     transform: translateY(-54px);
   }
 }
+
 @-webkit-keyframes scrollup {
   100% {
     transform: translateY(-54px);
@@ -172,11 +183,9 @@ body{
   font-weight: 700;
   font-size: 52px;
   color: transparent;
-  background-image: linear-gradient(
-    45deg,
-    rgba(24, 212, 241, 1) 0%,
-    rgba(37, 119, 221, 1) 100%
-  );
+  background-image: linear-gradient(45deg,
+      rgba(24, 212, 241, 1) 0%,
+      rgba(37, 119, 221, 1) 100%);
   -webkit-background-clip: text;
   background-clip: text;
   z-index: 2;
@@ -192,46 +201,173 @@ body{
   font-weight: 400;
 }
 
-.status-slider{
+.status-slider {
   padding-left: 150px;
 }
 
-.btn-slider{
+.btn-slider {
   padding-left: 150px;
   padding-top: 50px;
 }
-.contact-element{
+
+.contact-element {
   background-image: url('../lib/source/Image/contact_us.png');
   background-size: contain;
   background-repeat: no-repeat;
   padding: 85px;
-  padding:40px 126px;
+  padding: 40px 126px;
   height: 60vh;
-  overflow:hidden
+  overflow: hidden
 }
 
-.contact-text-left{
+.contact-text-left {
   font-family: Inter;
-font-size: 44px;
-font-style: normal;
-font-weight: 700;
-line-height: 62px; /* 140.909% */
-letter-spacing: 0.88px;
+  font-size: 44px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 62px;
+  /* 140.909% */
+  letter-spacing: 0.88px;
 }
 
-.btnContactUs{
-  
+.btnContactUs {
+
   border-radius: 112px;
   padding: 25px 25px;
 }
-.contact-text-btn{
-  background: -webkit-linear-gradient(#18D4F1,#2577DD );
+
+.contact-text-btn {
+  background: -webkit-linear-gradient(#18D4F1, #2577DD);
   -webkit-background-clip: text;
- font-weight: bold;
+  font-weight: bold;
   -webkit-text-fill-color: transparent;
+}
+
+.txt-project{
+  width: 75px;
 }
 @media (min-width: 1366px) {
   #hero {
     background-attachment: fixed;
   }
+}
+
+@media only screen and (max-width: 500px) and (min-width: 300px) {
+
+  html {
+    scrollbar-width: none;
+    overflow-x: hidden;
+  }
+
+  body {
+    overflow-x: hidden !important;
+
+  }
+
+  #hero h1 {
+    font-size: 36px;
+    text-align: center;
+    /* Heading/H4 */
+    font-family: Inter;
+    font-size: 36px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 48px;
+  }
+
+  #hero h4 {
+    line-height: 2;
+    padding: 13px;
+    width: 100%;
+    font-family: Inter;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 34px; 
+    width: 75%;
+  }
+  .txt-end{
+    margin-top: 10px;
+  }
+  .item{
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 24px; 
+    margin-left: 10px;
+    margin-right: 10px;
+    margin-bottom: 10px;
+  }
+  .hero-project-container{
+    display: inline-block!important;
+    width: 100%;
+    margin: 0 auto;
+    text-align: center;
+  }
+  .hero-project{
+    display: inline-block!important;
+    width: 100%;
+    margin: 0 auto;
+    text-align: center;
+  }
+  .txt-project{
+    width: 100%;
+  }
+ 
+  .navbar-mobile{
+    background-color: #fff!important;
+    height: 100vh;
+    width: 100%!important;
+
+  }
+  .navbar-mobile ul li a{
+    color: #000!important;
+  }
+
+  .navbar-mobile ul li a:hover{
+    color: transparent!important;
+  }
+  .consult{
+    display: block!important;
+    background: linear-gradient(88.76deg, #18d4f1 12.36%, #2577dd 73.63%);
+    border-radius: 100px;
+    padding: 8px 16px;
+    margin-left: 20px;
+  }
+  .navbar{
+    button[aria-expanded="true"] > span.close {
+      display: block;
+      color: #000;
+      opacity: 1;
+    }
+  
+    button[aria-expanded="true"] > span.navbar-toggler-icon {
+      display: none;
+    }
+  
+    button[aria-expanded="false"] > span.close {
+      display: none;
+    }
+  }
+
+ .reachus{
+    display: none;
+  }
+  .bg-white{
+    background-color: #fff!important;
+  }
+
+  .title-aboutus{
+    margin-top: 20px;
+  }
+  .dotdot-aboutus{
+    display: none;
+  }
+  #pills-tab,#pills-tabContent{
+    display: none;
+  }
+  .whatwedo-mobile{
+    display: block!important;
+  }
+  
 }
