@@ -570,11 +570,30 @@ footer
   padding: 30px 0 30px 0;
   justify-content: center;
 }
+
+#footer a{
+  display: block;
+  text-decoration: none;
+  color: #fff;
+  padding-bottom: 10px;
+}
+#footer a:hover{
+  color: transparent;
+  background-image: linear-gradient(45deg, rgb(24, 212, 241) 0%, rgb(37, 119, 221) 100%);
+  -webkit-background-clip: text;
+  background-clip: text;
+}
+#footer a:active{
+  color: transparent;
+  background-image: linear-gradient(45deg, rgb(24, 212, 241) 0%, rgb(37, 119, 221) 100%);
+  -webkit-background-clip: text;
+  background-clip: text;
+}
 #footer h5 {
   font-size: 18px;
   font-weight: 700;
 }
-#footer p,
+#footer a,
 #footer span {
   font-size: 14px;
   font-weight: 400;
