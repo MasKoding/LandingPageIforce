@@ -119,6 +119,10 @@ section {
 /* ----------
 about us
  ---------- */
+
+ #aboutus {
+  margin-top: 140px;
+ }
 #aboutus .title-aboutus .mini-info {
   margin-bottom: 12px;
 }
