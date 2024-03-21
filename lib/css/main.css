@@ -263,13 +263,14 @@ our expertize
   height: 100%;
   border-radius: 12px;
   background: rgb(255, 255, 255);
-  box-shadow: 0 0 24px 0 rgba(0, 0, 0, 0.1019607843);
+  box-shadow: 0px 2px 24px 0px rgba(0, 0, 0, 0.12);
   border: none;
   z-index: 2;
   font-family: "Inter", sans-serif;
+  transition: transform 0.5s ease!important;
 }
 .ourexpertize .card:hover {
-  box-shadow: 0 0 24px 0 rgba(0, 0, 0, 0.3);
+  transform: translateY(-20px)!important;
 }
 .ourexpertize .card h4 {
   font-size: 18px;
