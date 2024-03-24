@@ -4,6 +4,11 @@
 @import url("https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap");
 
 
+:root{
+  --gradient:linear-gradient(217deg,rgba(246, 79, 89, 0.28),rgba(196, 113, 237, 1),rgba(18, 194, 233, 1),rgba(255, 255, 255, 1));
+  --border-width:2px;
+  --border-radius:10px;
+}
 body {
   overflow-x: hidden;
   width: 100%;
@@ -17,6 +22,8 @@ body {
   width: 100%;
   height: 100vh;
   overflow-x: hidden;
+  z-index: 2;
+ 
 }
 
 #hero .container {
@@ -74,24 +81,96 @@ body {
 
 
 
+
+
 .item {
   font-size: 24px;
+  padding: 0px 15px;
+  background: transparent;
   position: relative;
-  top: 0;
-  border: 7px solid transparent;
-  border-image-source: url("source/Image/rounded.png");
-  padding: 5px 15px;
-  border-radius: 10px;
-  border-image-slice: 10;
-  margin-top: 100%;
-  position: relative;
-  animation-name: scroll;
-  animation-duration: 8s;
-  animation-delay: 2s;
-  animation-iteration-count: infinite;
-  animation-direction: alternate;
+  z-index: 1;
+  display: none;
 }
 
+.item::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  border-radius: 10px;
+  border: 2px solid transparent;
+  background: linear-gradient(45deg, rgba(246, 79, 89, 0.28), rgba(196, 113, 237, 1),rgba(18, 194, 233, 1)) border-box!important;
+  -webkit-mask: linear-gradient(purple 0 0) padding-box, linear-gradient(orange 0 0);
+  -webkit-mask-composite: destination-out;
+  mask-composite: exclude;
+}
+
+
+
+.content-animate .item.text-in{
+	display: block!important;
+	animation: textIn .5s ease;
+}
+.content-animate .item.text-out{
+	animation: textOut 1s ease;
+}
+@keyframes textIn{
+	0%{
+		transform: translateY(100%);
+	}
+	100%{
+		transform: translateY(0%);
+	}
+}
+@keyframes textOut{
+	0%{
+		transform: translateY(0%);
+	}
+	100%{
+		transform: translateY(-100%);
+
+	}
+}
+
+
+@keyframes animation{
+  10%{
+      top: 0;
+  }
+  20%{
+      top: 0;
+  }
+  25%{
+      top: -50px;
+  }
+  45%{
+      top: -50px;
+  }
+
+  50%{
+      top: -100px;
+  }
+  70%{
+      top: 0;
+  }
+
+
+}
+
+/* .item::before{
+  content: '';
+  display: block;
+  height:calc(100% - calc(var(--border-width)*2))!important;
+  width:calc(100% - calc(var(--border-width)*2))!important;
+  background: transparent;
+  position: absolute;
+  top: var(--border-width);
+  left: var(--border-width);
+  border-radius: calc(var(--border-radius) - var(--border-width));
+  z-index: -1;
+} */
 
 @keyframes scroll {
   0% {
@@ -207,7 +286,7 @@ body {
 
 .btn-slider {
   padding-left: 150px;
-  padding-top: 50px;
+  padding-top: 30px;
 }
 
 .contact-element {
@@ -216,7 +295,7 @@ body {
   background-repeat: no-repeat;
   padding: 85px;
   padding: 40px 126px;
-  height: 60vh;
+  height: 50vh;
   overflow: hidden
 }
 
@@ -277,7 +356,7 @@ body {
 }
 
 .whychooseus .card:hover .shadow{
-  transform:  translateX(-30px) rotate(10deg);
+  transform:  translateX(-10px) rotate(5deg);
 }
 
 .carrer-text{
@@ -308,7 +387,39 @@ line-height: 36px!important;
   height: 100vh;
   background-size: cover;
   position: absolute;
-  margin-top: -300px;
+  margin-top: -330px;
+}
+
+.hero-title{
+  font-family: "Sumana", serif!important;
+  font-size: 48px!important;
+  font-style: bold!important;
+  font-weight: bold!important;
+}
+
+.animate-text{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+ 
+}
+
+.content-animate{
+  width: 140px;
+  height: 50px;
+  line-height: 50px;
+  overflow: hidden;
+  margin-left: 5px;
+  margin-right: 5px;
+}
+
+.icon-technology{
+  width: 120px!important;
+  height: 120px!important;
+}
+
+.p-1{
+  font-size: 56px!important;
 }
 
 @media (min-width: 1366px) {
@@ -363,6 +474,8 @@ line-height: 36px!important;
     margin-right: 10px;
     margin-bottom: 10px;
   }
+
+
   .hero-project-container{
     display: inline-block!important;
     width: 100%;
