@@ -109,6 +109,9 @@ body {
 }
 
 
+.mt-5new{
+  margin-top: 3rem!important;
+}
 
 .content-animate .item.text-in{
 	display: block!important;
