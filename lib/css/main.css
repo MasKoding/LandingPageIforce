@@ -239,7 +239,7 @@ what we do
   background-image: url("../source/Image/Image_satu_620.png");
   background-repeat: no-repeat;
   width: 100%;
-
+  height: 600px;
   background-size: cover;
   overflow: hidden;
   background-position: center;
@@ -248,21 +248,21 @@ what we do
   background-image: url("../source/Image/Image_dua_620.png");
   background-repeat: no-repeat;
   width: 100%;
-  
+  height: 600px;
   background-size: cover;
 }
 #pills-contact {
   background-image: url("../source/Image/Image_tiga_620.png");
   background-repeat: no-repeat;
   width: 100%;
- 
+  height: 600px;
   background-size: cover;
 }
 #pills-disabled {
   background-image: url("../source/Image/Image_empat_620.png");
   background-repeat: no-repeat;
   width: 100%;
-  
+  height: 600px;
   background-size: cover;
 }
 
