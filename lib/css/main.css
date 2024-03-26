@@ -701,7 +701,7 @@ footer
     padding-right: 240px!important;
     width: 100%;
     padding-top: 20px !important;
-    padding-left: 138px;
+    padding-left: 68px;
     padding-bottom: 3px;
     
     
@@ -712,10 +712,11 @@ footer
 
   }
  .contact-text-right{
-  margin-left: 30px;
+  margin-left: 80px;
+ 
  }
  .btnContactUs{
-  margin-left: 30px;
+  margin-left: 70px;
  }
 }
 
