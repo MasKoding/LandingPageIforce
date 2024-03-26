@@ -23,6 +23,7 @@ body {
   height: 100vh;
   overflow-x: hidden;
   z-index: 1;
+  opacity: 0.9;
  
 }
 
@@ -287,20 +288,23 @@ body {
 .btn-slider1 {
   padding-left: 150px;
   padding-top: 10px;
+  margin-right: 32px;
 }
 
 .btn-slider2 {
   padding-left: 150px;
-  padding-top: 30px;
+  margin-right: 32px;
 }
 
 .btn-slider3 {
   padding-left: 150px;
   padding-top: 30px;
+  margin-right: 32px;
 }
 .btn-slider4 {
   padding-left: 150px;
   padding-top: 30px;
+  margin-right: 32px;
 }
 .contact-element {
   background-image: url('../lib/source/Image/contact_us.png');
