@@ -187,16 +187,17 @@ what we do
 #whatwedo .whatwedo-text {
   padding-left: 150px;
   padding-right: 50px;
-  padding-top: 80px;
+  padding-top: 16px;
 }
 #whatwedo .whatwedo-text h3 {
   padding-bottom: 40px;
   color: white;
+  font-weight: 800;
   font-size: 36px!important;
 }
 #whatwedo .whatwedo-text p {
   color: white;
-  font-size: 18px!important;
+  font-size: 16px!important;
 }
 #whatwedo .nav-link {
   font-family: "Plus Jakarta Sans", sans-serif;
@@ -234,7 +235,7 @@ what we do
 }
 
 #pills-home {
-  background-image: url("../source/Image/Image_satu.png");
+  background-image: url("../source/Image/Image_satu_600.png");
   background-repeat: no-repeat;
   width: 100%;
   height: 500px;
@@ -243,21 +244,21 @@ what we do
   background-position: center;
 }
 #pills-profile {
-  background-image: url("../source/Image/Image_dua.png");
+  background-image: url("../source/Image/Image_dua_600.png");
   background-repeat: no-repeat;
   width: 100%;
   height: 500px;
   background-size: cover;
 }
 #pills-contact {
-  background-image: url("../source/Image/Image_tiga.png");
+  background-image: url("../source/Image/Image_tiga_600.png");
   background-repeat: no-repeat;
   width: 100%;
   height: 500px;
   background-size: cover;
 }
 #pills-disabled {
-  background-image: url("../source/Image/Image_empat.png");
+  background-image: url("../source/Image/Image_empat_600.png");
   background-repeat: no-repeat;
   width: 100%;
   height: 500px;
@@ -616,3 +617,80 @@ footer
   font-size: 14px;
   font-weight: 400;
 }/*# sourceMappingURL=main.css.map */
+
+
+@media only screen and (max-width: 1290px) and (min-width: 1280px) {
+  .contact-element{
+    padding-left: 38px!important;
+    padding-top: 0px!important;
+    padding-right: 158px!important;
+    margin-left: 160px;
+  }
+}
+
+@media only screen and (max-width: 1708px) and (min-width: 1700px) {
+  .contact-element{
+    padding-left: 118px!important;
+    padding-top: 70px!important;
+  
+    margin-left: 160px;
+  }
+}
+@media only screen and (max-width: 1425px) and (min-width: 1200px) {
+  #whatwedo .whatwedo-text {
+    padding-left: 150px;
+    padding-right: 50px;
+    padding-top: 0px;
+  }
+
+  .btn-slider1 {
+    padding-top: 0;
+    margin-top: -25px;
+  }
+
+  #whatwedo .whatwedo-text h3 {
+    padding-bottom: 10px;
+    padding-top: 20px;
+  }
+  #whatwedo .whatwedo-text h3:nth-child(2) {
+    padding-bottom: 10px;
+    padding-top: 40px;
+  }
+  .btn-slider2{
+    padding-top: 0;
+    margin-top: 30px;
+  }
+  .contact-element{
+    padding-right: 240px!important;
+    padding-top: 45px;
+    padding-left: 108px;
+    padding-bottom: 3px;
+    margin-left: 160px;
+  }
+  .contact-text-left {
+    line-height: 55px;
+}
+.tag-contactus{
+  padding-top: 15px;
+}
+}
+
+@media only screen and (max-width: 1900px) and (min-width: 1800px) {
+  .contact-element{
+    padding-right: 240px!important;
+    padding-top: 100px;
+    padding-left: 108px;
+    padding-bottom: 3px;
+    margin-left: 160px;
+  }
+}
+
+@media only screen and (min-width: 1600px) {
+  .contact-element{
+    padding-right: 240px!important;
+    padding-top: 60px;
+    padding-left: 108px;
+    padding-bottom: 3px;
+    margin-left: 160px;
+  }
+}
